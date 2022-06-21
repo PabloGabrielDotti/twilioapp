@@ -8,7 +8,7 @@
   var device;
 
   log('Requesting Capability Token...');
-  $.getJSON('/token')
+  $.getJSON('https://ceil-barracuda-3740.twil.io/capability-token')
     .then(function (data) {
       log('Got a token.');
       console.log('Token: ' + data.token);
